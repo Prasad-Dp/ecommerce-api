@@ -81,7 +81,9 @@ app.use("/api/v1/orders", orderRoutes);
 app.use("/api/v1/coupons", couponRoutes);
 app.use("/api/v1/colors", colorRoutes);
 
-app.get("/", (req, res) => {});
+app.get("/", (req, res) => {
+  res.sendfile('ecommerce-api.html')
+});
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`server running on port ${PORT}... `);
