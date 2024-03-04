@@ -94,8 +94,8 @@ const orderCtrl = async (req, res) => {
         orderId: JSON.stringify(order?._id),
       },
       mode: "payment",
-      success_url: "http://localhost:3000/profile/orders",
-      cancel_url: "http://localhost:3000/profile/orders",
+      success_url: "https://online-shope-sepia.vercel.app/profile",
+      cancel_url: "https://online-shope-sepia.vercel.app/cart",
     });
     //console.log(order)
     //console.log(session.url)
